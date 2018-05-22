@@ -70,4 +70,6 @@ $ curl GET http://localhost:5000/v1/cep/30626680
 ```
 # Retorno
 
+Retorno será um json com conteudo, veja na imagem abaixo 
+
 ![RETORNO](return-cep.png?raw=true "RETORNO DA CONSULTA")
