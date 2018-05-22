@@ -1,3 +1,5 @@
+[![GoDoc](https://godoc.org/github.com/DiegoSantosWS/gocep?status.svg)](https://godoc.org/github.com/DiegoSantosWS/gocep)
+
 #CONSULTAR CEP
 API PARA CONSULTAR CEP, RETORNA DADOS DE ENDEREÇO DO CEP SOLICITADO
 
