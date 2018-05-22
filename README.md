@@ -64,3 +64,6 @@ Pode acessar via terminal com CRUL como mostra do exemplo abaixo ou via browser
 ``` bash
 $ curl GET http://localhost:5000/v1/cep/30626680
 ```
+# Retorno
+
+![RETORNO](return-cep.png?raw=true "RETORNO DA CONSULTA")
