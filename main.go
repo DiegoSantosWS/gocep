@@ -11,6 +11,7 @@ import (
 	yaml "gopkg.in/yaml.v2"
 )
 
+//main start program
 func main() {
 	yamlFile, err := ioutil.ReadFile("db.yml")
 	if err != nil {
