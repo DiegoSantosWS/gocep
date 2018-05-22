@@ -1,6 +1,8 @@
-[![GoDoc](https://godoc.org/github.com/DiegoSantosWS/gocep?status.svg)](https://godoc.org/github.com/DiegoSantosWS/gocep)
+[![GoDoc](https://godoc.org/github.com/DiegoSantosWS/gocep?status.svg)](https://godoc.org/github.com/DiegoSantosWS/gocep)  [![Go Report Card](https://goreportcard.com/badge/github.com/DiegoSantosWS/gocep)](https://goreportcard.com/report/github.com/DiegoSantosWS/gocep)
 
-#CONSULTAR CEP
+
+
+# CONSULTAR CEP
 API PARA CONSULTAR CEP, RETORNA DADOS DE ENDEREÇO DO CEP SOLICITADO
 
 # FORMA DE USO
