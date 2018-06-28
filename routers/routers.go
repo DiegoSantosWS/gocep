@@ -14,7 +14,7 @@ func Routers() {
 	r := mux.NewRouter()
 
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		w.Write([]byte("Olá vamos consultar cep?"))
+		w.Write([]byte("Olá vamos consultar algum cep?"))
 	})
 
 	r.HandleFunc("/v1/cep/{id}", controlls.Cep)

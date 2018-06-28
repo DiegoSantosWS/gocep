@@ -28,11 +28,8 @@ func InsertBD(d *model.DadosCep) (int64, error) {
 		return 0, err
 	}
 
-	cod, _ := rows.LastInsertId()
-	if cod == 0 {
-		return 0, nil
-	}
-	return cod, nil
+	return rows.LastInsertId()
+
 }
 
 //UpdateBD atualiza dados encontrado
