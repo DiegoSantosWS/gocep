@@ -2,27 +2,15 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
-	"log"
 
 	"github.com/DiegoSantosWS/restcep/connection"
-	"github.com/DiegoSantosWS/restcep/model"
 	"github.com/DiegoSantosWS/restcep/routers"
-	yaml "gopkg.in/yaml.v2"
 )
 
 //main start program
 func main() {
-	yamlFile, err := ioutil.ReadFile("db.yml")
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	conf := &model.Config{}
-	err = yaml.Unmarshal(yamlFile, conf)
-	if err != nil {
-		log.Fatal(err.Error())
-	}
-	err = connection.Connection(conf)
+
+	err := connection.Connection()
 	if err != nil {
 		fmt.Println("Erro ao abrir conexão com banco ", err.Error())
 		return
