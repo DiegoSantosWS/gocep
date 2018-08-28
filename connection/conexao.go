@@ -14,7 +14,7 @@ var Db *sqlx.DB
 
 //Connection realiza conexão com banco de dados
 func Connection() (err error) {
-	uri := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", os.Getenv("MYSQL_USER"), os.Getenv("MYSQL_PASSWORD"), "172.17.0.2", "3306", os.Getenv("MYSQL_DATABASE"))
+	uri := fmt.Sprintf("%s:%s@tcp(%s:%s)/%s", "root", os.Getenv("MYSQL_PASSWORD"), "172.17.0.2", "3306", os.Getenv("MYSQL_DATABASE"))
 	Db, err = sqlx.Open("mysql", uri)
 	if err != nil {
 		log.Fatal("[ERRO DB] erro ao conectar com banco de dados: ", err.Error())
