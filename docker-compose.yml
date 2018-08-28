@@ -1,0 +1,9 @@
+version: "3"
+services:
+  app:
+    build: .
+    environment:
+      - MYSQL_USER=mysql
+      - MYSQL_PASSWORD=5151c54319655664
+      - MYSQL_DATABASE=cepwsite
+      - MYSQL_ROOT_PASSWORD=9fc46b3397e0588d
