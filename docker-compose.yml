@@ -3,22 +3,22 @@ services:
   app:
     build: .
     environment:
-      - MYSQL_ROOT_PASSWORD=9fc46b3397e0588d
-      - MYSQL_DATABASE=cepwsite
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=yourdb
       - MYSQL_USER=root
-      - MYSQL_HOST=172.17.0.2
+      - MYSQL_HOST=db
     ports: 
       - "5000:5000"
     restart: always
-#    depends_on:
-#      - db
-#  db:
-#    image: mysql:5
-#    environment:
-#      - MYSQL_ROOT_PASSWORD=1234
-#      - MYSQL_DATABASE=cepwsite
-#      - MYSQL_USER=root
-#    volumes:
-#      - "data:/var/lib/mysql"
-#volumes:
-#  data:
+    depends_on:
+      - db
+  db:
+    image: mysql:5
+    environment:
+      - MYSQL_ROOT_PASSWORD=password
+      - MYSQL_DATABASE=yourdb
+      - MYSQL_USER=root
+    volumes:
+      - "data:/var/lib/mysql"
+volumes:
+  data:
