@@ -13,6 +13,7 @@ import (
 
 //Routers cria as routas usadas
 func Routers() {
+
 	r := mux.NewRouter()
 	s := r.PathPrefix("/v1").Subrouter()
 
