@@ -68,8 +68,53 @@ Pode acessar via terminal com CRUL como mostra do exemplo abaixo ou via browser
 ``` bash
 $ curl GET http://localhost:5000/v1/cep/30626680
 ```
+
 # Retorno
 
 Retorno será um json com conteudo, veja na imagem abaixo 
 
 ![RETORNO](return-cep.png?raw=true "RETORNO DA CONSULTA")
+
+# VERIFICAR CPF
+
+Para verificar se cpf é valído:
+
+-OBS: TESTE VIA BROWSER PARA VER RETORNO DO JSON.
+
+```bash
+$ curl GET http://api.developinsight.com.br/v1/validatecpf/113.651.920-32
+```
+
+# Retorno
+
+```json
+{
+    "msg": "Cpf Valído",
+    "comp": {
+        "Short": "",
+        "Long": ""
+    }
+}
+```
+
+# VERIFICAR CNPJ
+
+Para verificar se cnpj é valído:
+
+-OBS: TESTE VIA BROWSER PARA VER RETORNO DO JSON, LEMBRE-SE DE RETIRAR A "/".
+
+```bash
+$ curl GET http://api.developinsight.com.br/v1/validatecnpj/69977258000149
+```
+
+# Retorno
+
+```json
+{
+    "msg": "CNPJ Valido",
+    "comp": {
+        "Short": "",
+        "Long": ""
+    }
+}
+```
