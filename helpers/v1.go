@@ -2,7 +2,7 @@ package helpers
 
 import (
 	"errors"
-	"log"
+	"fmt"
 	"strconv"
 
 	"github.com/asaskevich/govalidator"
@@ -12,7 +12,7 @@ import (
 func ValidateCPF(cpf string) (string, error) {
 	doc, err := NumbersCPF(cpf)
 	if err != nil {
-		log.Fatal("ERRO: THE NUMBER NOT AN IS STRING")
+		fmt.Printf("ERROR: %s ENTRE COM UM NUMERO valido", err.Error())
 		return "", err
 	}
 
@@ -75,7 +75,8 @@ func ValidateCPF(cpf string) (string, error) {
 func ValidateCNPJ(cnpj string) (string, error) {
 	cnpj, err := NumbersCNPJ(cnpj)
 	if err != nil {
-		log.Fatal("ERRO: THE NUMBER NOT AN IS STRING")
+		//log.Fatal("ERRO: THE NUMBER NOT AN IS STRING")
+		fmt.Printf("ERROR: %s ENTRE COM UM NUMERO valido", err.Error())
 		return "erro 1", err
 	}
 
