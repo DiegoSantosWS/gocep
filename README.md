@@ -66,7 +66,7 @@ func Cep(w http.ResponseWriter, r *http.Request) {
 
 Pode acessar via terminal com CRUL como mostra do exemplo abaixo ou via browser
 ``` bash
-$ curl GET http://localhost:5000/v1/cep/30626680
+$ curl GET http://api.developinsight.com.br/v1/cep/30626650
 ```
 
 # Retorno
