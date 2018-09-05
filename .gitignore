@@ -1,4 +1,3 @@
 db.yml
 *.lock
 *.toml
-vendor/
